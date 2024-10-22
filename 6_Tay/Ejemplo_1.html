@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALLER TAY</title>
+    <style> 
+        .hide {
+            display: none;
+        }
+
+        .highlight-yellow {
+            background-color: yellow;
+        }
+
+        .highlight-blue {
+            background-color: blue;
+        }
+
+        .highlight-red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1> Tay 1</h1>
+    <button id="toggleButton"> Mostrar/Ocultar parrafos</button>
+    <hr>
+
+    <p class="paragraph"> Soy Amarillo </p>
+    <p class="paragraph"> Soy Azul </p>
+    <p class="paragraph"> Soy Rojo </p>
+
+    <button id="highlight1"> Resaltar Amarillo</button>
+    <button id="highlight2"> Resaltar Azul</button>
+    <button id="highlight3"> Resaltar Rojo</button>
+
+    <script src="../scripts/tay.js"> </script>
+
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function () {
+            document.querySelectorAll(".paragraph").forEach(paragraph => {
+                paragraph.classList.toggle("hide");
+            });
+        });
+          
+        function removeHighlights() {
+            document.querySelectorAll(".paragraph").forEach(paragraph => {
+                paragraph.classList.remove("highlight-yellow");
+                paragraph.classList.remove("highlight-blue");
+                paragraph.classList.remove("highlight-red");
+            });
+        }
+    
+        document.getElementById("highlight1").addEventListener("click", function () {
+            removeHighlights(); 
+            document.querySelector(".paragraph").classList.add("highlight-yellow");
+        });
+    
+        document.getElementById("highlight2").addEventListener("click", function () {
+            removeHighlights(); 
+            document.querySelectorAll(".paragraph")[1].classList.add("highlight-blue");
+        });
+    
+        document.getElementById("highlight3").addEventListener("click", function () {
+            removeHighlights(); 
+            document.querySelectorAll(".paragraph")[2].classList.add("highlight-red");
+        });
+    </script>
+
+</body>
+</html>
