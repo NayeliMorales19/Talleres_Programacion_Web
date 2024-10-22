@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/estilos.css">
+    <title>Talleres</title>
+</head>
+<body>
+    
+    <div class = "tabinator">
+        <h1>Talleres Programacion Web Tema 3</h1>
+        <br>
+        <input type = "radio" id = "tab1" name = "tabs" checked>
+        <label for = "tab1"><strong>Taller 1 AJAX</strong></label>
+        <input type = "radio" id = "tab2" name = "tabs">
+        <label for = "tab2"><strong>Taller 2 jQuery</strong></label>
+        <input type = "radio" id = "tab3" name = "tabs">
+        <label for = "tab3"><strong>Taller 3 Dojo</strong></label>
+        <input type = "radio" id = "tab4" name = "tabs">
+        <label for = "tab4"><strong>Taller 4 Polymer</strong></label>
+        <input type = "radio" id = "tab5" name = "tabs">
+        <label for = "tab5"><strong>Taller 5 Mootools</strong></label>
+        <input type = "radio" id = "tab6" name = "tabs">
+        <label for = "tab6"><strong>Taller 6 TAY</strong></label>
+        <input type = "radio" id = "tab7" name = "tabs">
+        <label for = "tab7"><strong>Taller 7 FOUNDATION/TAILWIND </strong></label>
+        <input type = "radio" id = "tab8" name = "tabs">
+
+
+        <div id = "content1">
+          <p>Ejemplos de prácticas hechas con Ajax. </p>
+          <br>
+          <button onclick="Ej1Ajax()">Ejemplo 1</button>
+          <button onclick="Ej2Ajax()">Ejemplo 2</button>
+          <script>
+            function Ej1Ajax(){
+			      window.location.href = "./Talleres_ProgramacionWeb/1_AJAX/Ejemplo1_AjaxConFectch.html";
+            }
+		        function Ej2Ajax(){
+            window.location.href = "./Talleres_ProgramacionWeb/1_AJAX/Ejemplo2_AJXXMLHTTPRequest.html";
+            }
+          </script>
+        </div>
+
+        <div id = "content2">
+          <p>Ejemplos de práctias hechas con JQuery.</p>
+          <br>
+          <button onclick="Ej1jQuery()">Ejemplo 1</button>
+          <script>
+            function Ej1jQuery(){
+			      window.location.href = "./Talleres_ProgramacionWeb/2_JQuery/Ejemplo1_PracticaJQuery.html";
+            }
+          </script>
+        </div>
+
+        <div id = "content3">
+          <p>Ejemplos de prácticas hechas con Dojo.</p>
+          <br>
+          <button onclick="Ej1Dojo()">Ejemplo 1</button>
+          <button onclick="Ej2Dojo()">Ejemplo 2</button>
+          <button onclick="Ej3Dojo()">Ejemplo 3</button>
+          <script>
+            function Ej1Dojo(){
+            window.location.href = "./3_Dojo/Ejemplo1.html";
+            }
+            function Ej2Dojo(){
+            window.location.href = "./3_Dojo/Ejemplo2.html";
+            }
+            function Ej3Dojo(){
+            window.location.href = "./Talleres_ProgramacionWeb/3_Dojo/Ejemplo3.html";
+            }
+          </script>
+        </div>
+
+        <div id = "content4">
+          <p>Ejemplos de prácticas hechas con Polymer.</p>
+          <br>
+          <img src="./Capturas/ej.png" alt="Polymer">
+        </div>
+
+        <div id = "content5">
+          <p>Ejemplos de prácticas hechas con Mootools.</p>
+          <br>
+          <button onclick="Ej1Mootools()">Ejemplo 1</button>
+          <script>
+            function Ej1Mootools(){
+            window.location.href = "./Talleres_ProgramacionWeb/5_Mootools/Ejemplo1.html";
+            }
+            function Ej2Mootools(){
+            window.location.href = "./Talleres_ProgramacionWeb/5_Mootools/Ejemplo2.html";
+            }
+          </script>
+          <br>
+          
+        </div>
+
+        <div id = "content6">
+          <p>Ejemplos de prácticas hechas con Tay.</p>
+          <br>
+          <button onclick="Ej1Tay()" >Ejemplo 1</button>
+          <button onclick="Ej2Tay()" >Ejemplo 2</button>
+          <script>
+            function Ej1Tay(){
+            window.location.href = "./Talleres_ProgramacionWeb/6_Tay/Ejemplo1.html";
+            }
+            function Ej2Tay(){
+            window.location.href = "./Talleres_ProgramacionWeb/6_Tay/Ejemplo2.html";
+            }
+          </script>
+        </div>
+
+        <div id = "content10">
+          <p>Ejemplos de prácticas hechas con FOUNDATION/TAILWIND.</p>
+          <br>
+          <button onclick="EjBootstrap()" >Ejemplo bt</button>
+          <button onclick="Ej1Tailwind()" >Ejemplo 1 tw</button>
+          <button onclick="Ej2Tailwind()" >Ejemplo 2 tw</button>
+          <script>
+            function EjBootstrap(){
+            window.location.href = "./Talleres_ProgramacionWeb/7_Tailwind/bootstrap.html";
+            }
+            function Ej1Tailwind(){
+            window.location.href = "./Talleres_ProgramacionWeb/7_Tailwind/tailwind.html";
+            }
+            function Ej2Tailwind(){
+            window.location.href = "./Talleres_ProgramacionWeb/7_Tailwind/ejemplo2.html";
+            }
+          </script>
+        </div>
+
+        
+
+        <br> <br>
+       <h6>Nayeli Morales Garcia - Ingenieria en Sistemas Computacionales - Programación Web</h6>
+    </div>
+
+</body>
+</html>
